@@ -26,12 +26,15 @@ export default function GiftCard({
                     className="relative w-full aspect-square max-w-[140px] sm:max-w-[150px] md:max-w-[160px] mx-auto rounded-[16px] sm:rounded-[18px] md:rounded-[20px] overflow-hidden z-20"
                     style={{ background: 'radial-gradient(75.27% 122.66% at -26.84% 50%, #7785a2 0%, #354057 100%)' }}
                 >
-                    <div className='w-full h-full absolute inset-0 z-20' style={{
-                        backgroundImage: 'url(/assets/img/card-bg-img.png)',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                    }}></div>
+                    {/* Background image only when there's a character */}
+                    {hasCharacter && (
+                        <div className='w-full h-full absolute inset-0 z-20' style={{
+                            backgroundImage: 'url(/assets/img/card-bg-img.png)',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}></div>
+                    )}
 
                     {/* Empty state pattern - show when no character */}
                     {!hasCharacter && (

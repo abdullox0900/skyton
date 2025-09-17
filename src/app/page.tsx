@@ -4,6 +4,7 @@ import BasketButton from "@/components/BasketButton";
 import GiftBox from "@/components/GiftBox";
 import Hero from "@/components/Hero";
 import HomeGiftCard from "@/components/HomeGiftCard";
+import ProfileSection from "@/components/ProfileSection";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -107,7 +108,7 @@ export default function Home() {
     title: "Future Gifts",
     subtitle: "Holder",
     cardId: "#35841",
-    price: "~ 1.751",
+    price: "1.751",
     tonPrice: "1.751",
   }));
 
@@ -121,9 +122,24 @@ export default function Home() {
   ];
 
   const premiumBoxes = [
-    { color: "green" as const, months: 3 },
-    { color: "blue" as const, months: 6 },
-    { color: "red" as const, months: 12 },
+    {
+      color: "green" as const,
+      months: 3,
+      price: "569 ₽",
+      tonPrice: "~ 2,267 TON ~",
+    },
+    {
+      color: "blue" as const,
+      months: 6,
+      price: "1,397 ₽",
+      tonPrice: "~ 5,567 TON ~",
+    },
+    {
+      color: "red" as const,
+      months: 12,
+      price: "2,539 ₽",
+      tonPrice: "~ 10,118 TON ~",
+    },
   ];
 
   return (
@@ -526,12 +542,18 @@ export default function Home() {
                     descriptionStyle="text-[16px] sm:text-[24px] text-[#E0E5EC]"
                   />
                 </div>
-                <BasketButton text="Купить" />
+                <BasketButton text={box.price} />
+                <div className="text-[#8893AC] text-[12px] sm:text-[14px] mt-2 text-center">
+                  {box.tonPrice}
+                </div>
               </div>
             ))}
           </div>
         </section>
       </div>
+
+      {/* Profile Section */}
+      <ProfileSection />
     </div>
   );
 }

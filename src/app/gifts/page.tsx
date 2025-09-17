@@ -83,7 +83,8 @@ export default function GiftsPage() {
                     </button>
                 </div>
 
-                {/* Filter Modal */}
+                
+
                 {isFilterModalOpen && (
                     <div className="">
                         <div className="w-full mb-[200px]">
@@ -146,8 +147,7 @@ export default function GiftsPage() {
 
                                 {/* UI Elements from image */}
                                 <div className="flex justify-between gap-[12px] flex-wrap">
-                                    <div className='flex flex-1 justify-center gap-[35px] bg-[#0E1423] rounded-[10px] px-[39px] py-[11px]'>
-                                        <button className="flex items-center font-medium gap-[10px] text-[#e0e5ec] text-[14px] transition-colors">
+                                <button className="flex flex-1 justify-center gap-[35px] bg-[#0E1423] rounded-[10px] px-[39px] py-[11px] flex items-center gap-[10px] text-[#e0e5ec] text-[14px] transition-colors font-medium">
                                             <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.0038 7.74141C9.60722 7.95058 9.17485 8.09517 8.72549 8.16889V16C9.10785 15.931 9.47545 15.8046 9.81373 15.6256L14.1863 13.2872C14.737 12.9914 15.1944 12.5669 15.5126 12.0561C15.8309 11.5452 15.9989 10.966 16 10.3762V5.69811C15.9977 5.33906 15.9328 4.98271 15.8077 4.64285L10.0038 7.74141Z" fill="#E0E5EC" />
                                                 <path d="M6.72459 6.57861C7.11315 6.78567 7.55356 6.89464 8.00181 6.89464C8.45007 6.89464 8.89048 6.78567 9.27904 6.57861L15.083 3.48005C14.8259 3.20641 14.5226 2.97327 14.1848 2.78976L9.81373 0.448695C9.26193 0.154715 8.63653 0 8 0C7.36347 0 6.73807 0.154715 6.18627 0.448695L1.81373 2.78774C1.48802 2.96444 1.19425 3.18739 0.94314 3.44846L6.72459 6.57861Z" fill="#E0E5EC" />
@@ -155,7 +155,7 @@ export default function GiftsPage() {
                                             </svg>
                                             Модели
                                         </button>
-                                        <button className="flex items-center gap-[10px] text-[#e0e5ec] text-[14px] transition-colors font-medium">
+                                        <button className="flex flex-1 justify-center gap-[35px] bg-[#0E1423] rounded-[10px] px-[39px] py-[11px] flex items-center gap-[10px] text-[#e0e5ec] text-[14px] transition-colors font-medium">
                                             <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.0038 7.74141C9.60722 7.95058 9.17485 8.09517 8.72549 8.16889V16C9.10785 15.931 9.47545 15.8046 9.81373 15.6256L14.1863 13.2872C14.737 12.9914 15.1944 12.5669 15.5126 12.0561C15.8309 11.5452 15.9989 10.966 16 10.3762V5.69811C15.9977 5.33906 15.9328 4.98271 15.8077 4.64285L10.0038 7.74141Z" fill="#E0E5EC" />
                                                 <path d="M6.72459 6.57861C7.11315 6.78567 7.55356 6.89464 8.00181 6.89464C8.45007 6.89464 8.89048 6.78567 9.27904 6.57861L15.083 3.48005C14.8259 3.20641 14.5226 2.97327 14.1848 2.78976L9.81373 0.448695C9.26193 0.154715 8.63653 0 8 0C7.36347 0 6.73807 0.154715 6.18627 0.448695L1.81373 2.78774C1.48802 2.96444 1.19425 3.18739 0.94314 3.44846L6.72459 6.57861Z" fill="#E0E5EC" />
@@ -163,7 +163,6 @@ export default function GiftsPage() {
                                             </svg>
                                             Задний фон
                                         </button>
-                                    </div>
                                     <button className="flex items-center gap-[8px] bg-[#0E1423] text-[#e0e5ec] rounded-[10px] px-[16px] py-[8px] text-[14px] hover:bg-[#1a2332] transition-colors font-medium">
                                         От низкой цены до высокой
                                         <Image src="/assets/svg/arrow-bottom.svg" alt="arrow-down" width={8} height={4} />

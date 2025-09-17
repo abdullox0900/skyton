@@ -13,7 +13,7 @@ interface HomeGiftCardProps {
 export default function HomeGiftCard({
   subtitle = "Holder",
   id = "#35841",
-  price = "1.751",
+  price = "171.453",
 }: HomeGiftCardProps) {
   return (
     <div className="flex flex-col items-center w-full">
@@ -52,7 +52,7 @@ export default function HomeGiftCard({
 
       {/* Card info */}
       <div className="mt-[7px] w-full max-w-[180px]">
-        <div className="flex items-center justify-between mb-[12px] px-1">
+        <div className="flex items-center justify-between mb-[7px] px-1">
           <span className="text-[#e0e5ec] text-[16px] font-medium">
             {subtitle}
           </span>
@@ -60,7 +60,7 @@ export default function HomeGiftCard({
         </div>
 
         {/* Price button */}
-        <button className="w-full transition-colors bg-[#527BEB] duration-200 rounded-[15px] py-[10px] px-[20px] flex items-center justify-center gap-2 transform active:scale-[0.98]">
+        <button className="w-full transition-colors bg-[#527BEB] mb-[10px] duration-200 rounded-[15px] py-[7px] px-[20px] flex items-center justify-center gap-2 transform active:scale-[0.98]">
           <svg
             width="17"
             height="18"
@@ -75,9 +75,12 @@ export default function HomeGiftCard({
           </svg>
 
           <div className="text-[#E0E5EC] font-semibold text-[16px]">
-            {price}
+            {price}₽
           </div>
         </button>
+        <div className="text-[#8893AC] text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] mt-[4px] sm:mt-[5px] md:mt-[6px] mb-[4px] sm:mb-[5px] text-center px-2">
+          ~ 2,267 TON ~
+        </div>
       </div>
     </div>
   );
